@@ -1,0 +1,58 @@
+/* Infinite scroll animation */
+@keyframes verticalScroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes horizontalScroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Default vertical scroll */
+  .contact-scroll {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto; /* Allow vertical manual scrolling */
+  }
+  
+  .contact-scroll-content {
+    display: flex;
+    flex-direction: column;
+    animation: verticalScroll 20s linear infinite; /* Infinite vertical scrolling */
+  }
+  
+  .contact-scroll:hover .contact-scroll-content {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
+  
+  /* Horizontal scroll for mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .contact-scroll {
+      height: auto;
+      width: 100%;
+      overflow-x: auto; /* Allow horizontal manual scrolling */
+      overflow-y: hidden;
+    }
+  
+    .contact-scroll-content {
+      flex-direction: row;
+      gap: 2rem;
+      animation: horizontalScroll 20s linear infinite; /* Infinite horizontal scrolling */
+    }
+  
+    .contact-scroll-content > div {
+      width: 100%; /* Ensure each block takes up full width in horizontal scroll */
+      height: auto;
+    }
+  }
+  
