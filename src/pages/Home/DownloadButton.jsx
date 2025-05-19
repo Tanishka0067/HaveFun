@@ -11,7 +11,7 @@ export default function GradientButton() {
           text-center
           rounded-[10px]
           border-none
-          bg-gradient-to-r from-[#0ba360] via-[#3cba92] via-[#30dd8a] to-[#2bb673]
+          bg-gradient-to-r from-[#0ba360]  via-[#30dd8a] to-[#2bb673]
           bg-[length:300%_100%]
           shadow-[0_4px_15px_0_rgba(23,168,108,0.75)]
           transition-all duration-400 ease-in-out

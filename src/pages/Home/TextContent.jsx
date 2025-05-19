@@ -20,7 +20,7 @@ export default function TextContent() {
           drop-shadow-[0_0_8px_rgba(160,216,239,0.8)] /* neon glow */
         "
       >
-       A new age where AI meets gaming.
+          A playful, intelligent platform for Gen Z & Gen Alpha to create, play, connect, and earn.
       </h1>
       <p
         className="

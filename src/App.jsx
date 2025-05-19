@@ -39,7 +39,8 @@ function App() {
       {loading ? (
         <Loader />
       ) : (
-        <div style={{ backgroundImage: `url(${star})` }}>
+        <div style={{ backgroundImage: `url(${star})` }}
+          className="overflow-hidden bg-cover bg-no-repeat bg-center min-h-screen relative">
           {/* Infinite loop audio (autoplayed after click) */}
           <audio src="audio.mp3" id="audio" loop />
           <Nav />

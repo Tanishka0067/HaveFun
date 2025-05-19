@@ -13,21 +13,23 @@ import meme7 from "../../assets/meme7.jpg";
 import meme8 from "../../assets/meme8.jpg";
 export default function Home() {
   // Sample images array
-  const images = [meme1, meme2, meme3, meme4, meme5, meme6, meme7, meme8,meme1, meme2, meme3, meme4, meme5, meme6, meme7, meme1, meme2, meme3, meme4, meme5, meme6, meme7 ];
+  const images = [meme1, meme2, meme3, meme4, meme5, meme6, meme7, meme8,meme1, meme2, meme3, meme4, meme5, meme6,
+     meme7, meme1, meme2, meme3, meme4, meme5, meme6, meme7, meme2, meme3, meme4, meme5, meme6];
 
   return (
-    <main
+    <section
+      id="home"
       className=" min-h-screen bg-cover bg-no-repeat bg-center relative"
       style={{ backgroundImage: `url(${star})` }}
     >
       {/* Diagonal overlay */}
       <div className="absolute inset-0 z-20 ">
         <div
-          className="absolute bottom-0 left-0 right-0  bg-black/50"
+          className="absolute bottom-0 left-0 right-0 w-full bg-black/50"
           style={{
             clipPath: "polygon(0% 100%, 100% 100%, 100% 0%)",
             height: "100%",
-            width: "100%",
+          
           }}
         >
           <ImageScroller images={images} />
@@ -45,6 +47,6 @@ export default function Home() {
         </div>
         
       </div>
-    </main>
+    </section>
   );
 }
