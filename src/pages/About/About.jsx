@@ -2,7 +2,7 @@ import React from 'react';
 import star from '../../assets/star3.jpg';
 import ui from '../../assets/ui.png';
 import ui2 from '../../assets/ui2.png';
-
+import logo from '../../assets/logonew.png';
 const features = [
   {
     title: "Interactive Reels",
@@ -15,6 +15,12 @@ const features = [
     image: ui2,
     description:
       "Share your location to invite others. Watch who views the location and foster real-world social connections.",
+  },
+  {
+    title: "",
+    image: logo,
+    description:
+      "This is just the beginning! We’ve packed HaveFun with exciting, educational, and entertaining features—and there’s so much more on the way. Our official launch is just around the corner, so stay connected for exclusive offers, early access, and nonstop fun. We can’t wait for you to experience the world of HaveFun!",
   },
 ];
 

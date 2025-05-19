@@ -19,7 +19,7 @@ const Contact = () => {
   const [scrollIndex, setScrollIndex] = useState(0);
   const contactInfo = [
     {
-      title: "ABOUT ME",
+      title: "ABOUT US",
       details: [
         "Name: HaveFun",
         "Email: Official@havefun4u.com",
@@ -46,13 +46,13 @@ const Contact = () => {
     {
       title: "JOIN OUR TEAM",
       details: [
-        "If you want to join my team and work on exciting projects, tell me your story.",
+        "If you want to join our team and work on exciting projects, tell us your story.",
       ],
     },
     {
       title: "GENERAL CONTACT",
       details: [
-        "Don't hesitate to reach out. I usually respond within 24 hours unless it's a holiday.",
+        "Don't hesitate to reach out. We usually respond within 24 hours unless it's a holiday.",
       ],
     },
      {
